@@ -37,8 +37,9 @@
   --ff-outfit-sans: "Outfit", sans-serif;
   --ff-young-serif: "Young Serif", serif;
 
-  /* spacing */
-  --gap: 1.5rem;
+  --gap-section: 2rem;
+  --gap-component: 1.5rem;
+  --gap-compact: 1rem;
 }
 
 /*=======================
@@ -62,8 +63,9 @@ body {
   color: hsl(var(--clr-stone-600));
   background-color: hsl(var(--clr-stone-100));
 
+  align-items: center;
   line-height: 1.5;
-  min-height: 100vh;
+  min-height: 100dvh;
 
   /* improve text rendering on mac */
   -webkit-font-smoothing: antialiased;
@@ -71,6 +73,7 @@ body {
   grid-template-rows: min-content 1fr;
 
   overflow-x: hidden;
+  margin-block: 8rem;
 }
 
 img {
@@ -93,14 +96,16 @@ h1 {
  *========================**/
 
 /* general */
+
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  flex-direction: column;
+  gap: var(--gap-component, 1rem);
 }
 
 .grid {
   display: grid;
-  gap: var(--gap, 1rem);
+  gap: var(--gap-section, 1rem);
 }
 
 /* bg colors */
@@ -154,4 +159,48 @@ h1 {
 .fs-300 {
   font-size: var(--fs-300);
   line-height: 1.5;
+}
+
+/*=======================
+ * COMPONENTS
+ *========================**/
+.recipe-page {
+  background-color: #fff;
+  justify-self: center;
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 35em) {
+  body {
+    margin: 0;
+    background-color: inherit;
+  }
+  .recipe-page.grid {
+    gap: 0;
+  }
+  .recipe-page {
+    width: min(100%, 35rem);
+    border-radius: 0;
+  }
+
+  .container {
+    padding-block: 2.5rem;
+    padding-inline: 2rem;
+  }
+}
+
+/* tablets */
+@media (min-width: 35.01em) and (max-width: 48em) {
+  .recipe-page {
+    max-width: clamp(35.01rem, 84%, 38.5rem);
+    padding: 2.5rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 48.01em) {
+  .recipe-page {
+    max-width: clamp(38.5rem, 80%, 46rem);
+    padding: 2.5rem;
+  }
 }
