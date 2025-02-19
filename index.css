@@ -36,6 +36,9 @@
   /* font-family */
   --ff-outfit-sans: "Outfit", sans-serif;
   --ff-young-serif: "Young Serif", serif;
+
+  /* spacing */
+  --gap: 1.5rem;
 }
 
 /*=======================
@@ -83,4 +86,72 @@ img {
 p,
 h1 {
   overflow-wrap: break-word;
+}
+
+/*=======================
+ * UTILITY CLASSES
+ *========================**/
+
+/* general */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+/* bg colors */
+.bg-rose-light {
+  background-color: hsl(var(--clr-rose-50));
+}
+.bg-stone-subtle {
+  background-color: hsl(var(--clr-stone-100));
+}
+
+/* text-colors */
+.stone-dark {
+  color: hsl(var(--clr-stone-900));
+}
+.stone-gray {
+  color: hsl(var(--clr-stone-600));
+}
+
+.rose {
+  color: hsl(var(--clr-rose-800));
+}
+
+.brown {
+  color: hsl(var(--clr-brown-800));
+}
+
+/* font-family */
+.ff-young-serif {
+  font-family: var(--ff-young-serif);
+}
+.ff-outfit-sans {
+  font-family: var(--ff-outfit-sans);
+}
+
+/* font-size */
+.fs-900,
+.fs-600,
+.fs-400 {
+  line-height: 1;
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+  line-height: 1.5;
 }
