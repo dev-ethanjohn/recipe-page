@@ -37,3 +37,50 @@
   --ff-outfit-sans: "Outfit", sans-serif;
   --ff-young-serif: "Young Serif", serif;
 }
+
+/*=======================
+ * RESET
+ * ref: https://www.joshwcomeau.com/css/custom-css-reset/
+ *========================**/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-outfit-sans);
+  font-size: var(--fs-300);
+  color: hsl(var(--clr-stone-600));
+  background-color: hsl(var(--clr-stone-100));
+
+  line-height: 1.5;
+  min-height: 100vh;
+
+  /* improve text rendering on mac */
+  -webkit-font-smoothing: antialiased;
+  /* streches the grid to fill the available space vertically */
+  grid-template-rows: min-content 1fr;
+
+  overflow-x: hidden;
+}
+
+img {
+  /* https://www.youtube.com/watch?v=345V2MU3E_w */
+  font-style: italic;
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* avoid text overflows */
+p,
+h1 {
+  overflow-wrap: break-word;
+}
