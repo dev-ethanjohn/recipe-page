@@ -1,0 +1,39 @@
+/*=======================
+ * CUSTOM PROPERTIES
+ *========================**/
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+    format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+:root {
+  /* colors */
+  --clr-rose-800: 332 51% 32%;
+  --clr-rose-50: 330 100% 98%;
+
+  --clr-stone-900: 24 5% 18%;
+  --clr-stone-600: 30 10% 34%;
+  --clr-stone-150: 30 18% 87%;
+  --clr-stone-100: 30 54% 90%;
+
+  --clr-brown-800: 14 45% 36%;
+
+  /* foot-size */
+  --fs-900: 2.5rem; /*40px*/
+  --fs-600: 1.75rem; /*28px*/
+  --fs-400: 1.25rem; /* 20px */
+  --fs-300: 1rem; /* 16px
+
+  /* font-family */
+  --ff-outfit-sans: "Outfit", sans-serif;
+  --ff-young-serif: "Young Serif", serif;
+}
