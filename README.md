@@ -3,7 +3,6 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,7 +13,8 @@
 
 ## Overview
 
-### Screenshot
+https://github.com/user-attachments/assets/af3bcbba-043c-41eb-bf67-7a4283c30956
+
 
 ### Links
 
